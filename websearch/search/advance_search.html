@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style>
+            .heading {
+                text-align: center;
+                font-size: 60px;
+                vertical-align: middle;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            .search_bar {
+                height: 40px;
+                border:none;
+                
+            }
+            .bar_m {
+                
+                height:50px; 
+                background-color:#00ffff;
+                padding: 0%;
+            }
+            .bar_m>input {
+                width: 100%;
+                height: 100%;
+                padding: 0%;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+            }
+            .bar_m>input:focus {
+                outline: none;
+            }
+            .bar_l, .bar_r {
+                padding: 0%;
+                border-bottom: 1px solid black;
+                border-top: 1px solid black;
+            }
+            .col-1 {
+                width: 50px;
+                height: 50px;
+            }
+
+            .bar_l {
+                
+                border-left: 1px solid black;;
+            }
+            .bar_r {
+               
+                border-right:1px solid black;;
+            }
+            .container-fluid {
+                padding: 0%;
+            }
+            .row {
+                margin: 0% 0% 1% 0%;
+            }
+            .b1,.b2 {
+                float: right;
+            }
+            .btn {
+                border-radius: 0%;
+            }
+            
+            .col-12 {
+                padding: 0%;
+            }
+            .top-head {
+                margin-top: 14.266px;
+                padding-right: 14.266px;
+            }
+            .col-5, .col-2 {
+                padding: 0%;
+            }
+            .col-2>input {
+                width:100%;
+                font-size: x-small;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid vh-100">
+            <div class="row">
+                <div class="col-12 top-head">
+                    <a href="image_search.html" class="btn btn-primary btn-sm active b1" role="button" aria-pressed="true">Image Search</a>
+                    <a href="index.html" class="btn btn-primary btn-sm active b2" role="button" aria-pressed="true">Search</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="heading">Advance Search</h1>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-2"></div>
+                        <div class="col-lg-6 col-sm-8">
+                            <form action="https://google.com/search">
+                                <div class="row">
+                                    <div class="col-1 bar_l">&nbsp</div>
+                                    <div class="col-10 bar_m">
+                                        <input class="search_bar" type="text" name="as_q" placeholder="All words" >
+                                        
+                                    </div>
+                                    <div class="col-1 bar_r">&nbsp</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1 bar_l">&nbsp</div>
+                                    <div class="col-10 bar_m">
+                                        
+                                        <input class="search_bar" type="text" name="as_epq" placeholder="Exact Words">
+                                        
+                                    </div>
+                                    <div class="col-1 bar_r">&nbsp</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1 bar_l">&nbsp</div>
+                                    <div class="col-10 bar_m">
+                                        
+                                        <input class="search_bar" type="text" name="as_oq" placeholder="Any of These">
+                                        
+                                    </div>
+                                    <div class="col-1 bar_r">&nbsp</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1 bar_l">&nbsp</div>
+                                    <div class="col-10 bar_m">
+                                        
+                                        <input class="search_bar" type="text" name="as_eq" placeholder="none of these">
+                                    </div>
+                                    <div class="col-1 bar_r">&nbsp</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-5"></div>
+                                    <div class="col-2">
+                                        <input type="submit" value="Google Search">
+                                    </div>
+                                    <div class="col-5"></div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-3 col-sm-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
